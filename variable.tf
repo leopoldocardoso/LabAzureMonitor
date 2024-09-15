@@ -3,18 +3,6 @@ variable "sufix" {
   default = "alpha"
 }
 
-variable "vnet" {
-  type        = string
-  default     = "vnet-alpha"
-  description = "Virtual Network"
-}
-
-variable "snet" {
-  type        = string
-  default     = "snet-alpha"
-  description = "Subrede"
-}
-
 variable "timezone" {
 
   default     = "E. South America Standard Time"
@@ -28,4 +16,20 @@ variable "tags" {
     Ambiente = "Dev"
     Objetivo = "Estudos Azure Monitor"
   }
+}
+
+variable "vmsize" {
+  default = "Standard_D2s_v3"
+}
+
+variable "winvmsize" {
+  default = "Standard_D4s_v3"
+}
+
+variable "adminusername" {
+  default = "leopoldo.cardoso"
+}
+
+variable "adminpassword" {
+  default = "pcardoso@6801"
 }
