@@ -9,6 +9,10 @@ variable "timezone" {
   description = "Horário para desligamento automático das VMs"
 }
 
+variable "location" {
+  default = "east-us"
+}
+
 variable "tags" {
   type        = map(any)
   description = "Tags para mapear custos no Azure"
